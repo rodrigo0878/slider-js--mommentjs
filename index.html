@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Projecto de Javascript Nativo por Rodrigo Aguilera</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!--<script type="text/javascript" src="jquery-3.6.0.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+</head>
+<!--  cuerpo de la pagina -->
+
+<body>
+       <!-- creando el contenedor global-->
+    <section id="global">
+        
+        <!-- creando la parete de la cabezera donde va el logo y la barra de navegacion-->
+        <header>
+                <div id="logo">
+                    <h1> Projecto <span class ="azul">JS</span></h1>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <nav id = "menu">
+
+                    <ul>
+                        <li> <a href="#"></a>Inicio</li>
+                        <li> <a href="#"></a>reloj</li>
+                        <li> <a href="#"></a>Sobre Mi</li>
+                        <li> <a href="#"></a>Contacto</li>
+                    </ul>
+
+                </nav>
+        </header>
+
+       <!-- creando el slider-->
+       <div id="slider">
+           
+            
+                <div class="bxslider">
+                    <div><img src="/img/sliderFotos/daisies.jpg" title="Funky roots"></div>
+                    <div><img src="/img/sliderFotos/plant1.jpg" title="The long and winding road"></div>
+                    <div><img src="/img/sliderFotos/succulents.jpg" title="Happy trees"></div>
+                  </div>
+            
+                  <div class="clearfix"></div> 
+       </div>     
+
+       <!-- creando el contenido-->
+       <section id="content"> 
+           <div id="posts">
+              
+            </div>
+
+           <aside id="sidebar">
+               
+               <div id="acerca">
+                   <h4>Quien Soy</h4>
+                   <img src="/img/cara2.jpg" alt="imagen de cara">
+               </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+           </aside>
+
+        </div>
+           <div class="clearfix"></div> <!-- es para limpiar los float de la pagina-->
+       </section>
+       
+       <div>
+        <form id="formulario" action="post">
+            <h2>identificate</h2>
+            <br>
+            <label for="name">nombre :</label>
+            <input type="text" placeholder="ingrese usuario">
+            <label for="password">Password :</label>
+            <input type="password" placeholder="ingrese password">
+            <button type="submit"> Ingresar</button>
+        </form>
+    </div>
+    </section>
+
+    <!--  pie de pagina -->
+    <footer id="footer">
+           
+        <h2>joaquin aguilera 2021  © </h1>
+    </footer>
+
+    
+</body>
+
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            width: 200px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+        .dashed{
+            border: 3px dashed black;
+            padding: 5px;
+        }
+    </style>
+    <title>formulario</title>
+   
+</head>
+<body>
+    <h1>formulario en el dom</h1>
+
+    
+        <div class="box">        
+                <form action="#" method="POST" id="form" onSubmit="return false"> 
+
+                    <label for="nombre"> Nombre : </label>
+                    <input type="text" name="nombre" id ="nombre" placeholder="ingrese nombre"/>
+                    <br>
+                    <br>
+                    <label for="apellido"> Apellido : </label>
+                    <input type="text" name ="apellido" id ="apellido" placeholder="ingrese apellido" />
+                    <br>
+                    <br>
+                    <label for="edad"> Edad: </label>
+                    <input type="number" name="edad" id ="edad" placeholder="ingrese edad"/>
+
+                    <br>
+                    <br>
+
+                    <input type="submit" name="Enviar" id ="submit"/>
+                    <br>
+                    <br>
+
+
+                 </form>
+                 
+        </div>
+        <div class ="box dashed"></div>
+    
+</p>
+
+</body>
+<script type= "text/javascript" src="/envio.js"></script>
+</html>

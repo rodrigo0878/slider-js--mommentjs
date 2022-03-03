@@ -1,0 +1,47 @@
+
+body{
+    /* background url sirve para linkear la foto al sitio web*/
+    background: url(/img/sliderFotos/descarga2.jpg);
+
+    /* background-attachment: fixed sirve para que al dar scrol l apagina no se mueva*/
+    background-attachment: fixed;
+
+   
+
+    
+}
+
+#global{
+    width: 75%; /* tamaño de la pantalla*/
+    
+    margin: 0px auto; /* centramos el contenedor*/
+    margin-top: 30px; /* le damos un margen top*/
+    padding: 20px; /*el margen al rededor*/
+    background: white; /* color de fondo */
+    box-shadow: 0px 0px 3px gray; /* para dar una sombra al contenedor */ 
+}
+
+
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* fuente de la letra*/
+    font-size: 30px; /* tamaño de la letra*/
+    letter-spacing: 2px; /* espacio de las letras*/
+    background: #0bb150; /* fondo del logo*/
+    color: black; /*  color de las letra*/
+    text-align: center; /* alinacion del texto*/
+    box-shadow: 0px 0px 3px black; 
+    width: 325px; /* ancho*/
+    height: 61px; /* altoi*/
+    margin-top: 5px; /*el margen arriba*/
+    margin-bottom: 5px; /* margin abajo*/
+    float: left; /* donde flotara la caja*/
+    padding-left: 10px;
+    margin-left: 20px;
+
+
+}
+
+.azul{
+    color: blue;
+    text-transform: uppercase;
+}

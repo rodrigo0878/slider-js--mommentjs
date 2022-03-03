@@ -1,0 +1,269 @@
+/*  css para priemera pagina en javascript native*/ 
+
+/* clase asterisco se plaica a todo*/
+*{
+    margin: 0px; /* ningun elemnto del html tenga algun margen*/
+    padding: 0px;
+    
+}
+
+.clearfix{
+    float: none;/*  */
+    clear: both; /* limpiar los flotados , vuelven a su sitio */
+}
+
+/* list-style : none ;  es para sacar los puntos de las listas*/
+
+body{
+    /* background url sirve para linkear la foto al sitio web*/
+    background: url(../img/29365-1920x1080.jpg);
+
+    /* background-attachment: fixed sirve para que al dar scrol l apagina no se mueva*/
+    background-attachment: fixed;
+
+   
+
+    
+}
+
+
+/*  seleccionamos la etiqueta global maquetando el container*/
+
+#global{
+    width: 75%; /* tamaño de la pantalla*/
+    
+    margin: 0px auto; /* centramos el contenedor*/
+    margin-top: 30px; /* le damos un margen top*/
+    padding: 20px; /*el margen al rededor*/
+    background: white; /* color de fondo */
+    box-shadow: 0px 0px 3px gray; /* para dar una sombra al contenedor */ 
+}
+
+
+/* div por si ya tiene un display block*/
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* fuente de la letra*/
+    font-size: 30px; /* tamaño de la letra*/
+    letter-spacing: 2px; /* espacio de las letras*/
+    background: #b1b10b; /* fondo del logo*/
+    color: black; /*  color de las letra*/
+    text-align: center; /* alinacion del texto*/
+    box-shadow: 0px 0px 3px black; 
+    width: 325px; /* ancho*/
+    height: 61px; /* altoi*/
+    margin-top: 5px; /*el margen arriba*/
+    margin-bottom: 5px; /* margin abajo*/
+    float: left; /* donde flotara la caja*/
+    padding-left: 10px;
+    margin-left: 20px;
+
+
+}
+
+.azul{
+    color: blue;
+    text-transform: uppercase;
+}
+
+
+/* maquetacion de articulos*/
+
+#menu{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif; /* letra*/
+    background: #333;
+    width: 100%;
+    text-transform: uppercase; /* dejar en mayusculas minusculas etc*/
+    margin-bottom: 20px;
+    
+    
+    color: cornsilk;
+}
+
+#menu ul{
+    line-height: 46px;/* separacion entre lineas*/
+    list-style: none; /* para que no esten los puntos de la lista*/
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor:pointer; /* aparece la manito en los link*/
+
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;/* para que salga todo el menu en una linea*/
+    transition: all 300ms;/* efecto para que paaresca*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#menu ul li:hover{ /* la clase :hover es para cambiar el fondo donde se esta pasando el mouse*/
+    background: chocolate;
+}
+
+#menu a {
+    display: block;
+    color: cornsilk;
+    text-decoration: none; /* sirve para borra la liena de abajo de los link*/
+    
+   padding-left: 30px;
+   padding-right: 30px;
+   cursor:pointer;/* para cuando pasemos el cursor por uh link se cambie a la manito*/
+    ;
+}
+
+
+
+#posts{
+    width: 50%;
+    float: left;
+}
+
+
+.post{
+    width: 100%;
+    float: left;
+    font-family: cursive;
+
+}
+
+.post h2{
+
+    font-size: 40px;
+    text-align: center;
+}
+
+.post .date{
+    display: block;
+    color: grey;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+   
+
+
+}
+
+#parrafo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 300px; /*300 px de ancho*/
+    text-align: justify;/* justificado del texto*/
+    
+}
+
+.post a{
+    width: 114px;
+    display: block; /* para que acue como si fiera un bloque*/ 
+    padding: 10px;
+    background: rgb(107, 218, 212) ;
+    color : black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: center;/* para centrar un texto dentro de un bloque o botton*/
+    border-radius: 8px;/* para curvar bloques o botones*/
+    /*float: right; -----   el bloque flotara en la parte derecha del contenedor*/
+    margin-bottom: 20px;
+}
+
+/* ahora aremos el sidebar ---- aside  */
+
+#sidebar{
+    display: block;
+    margin-top: 30px; /* le damos un margen top*/
+    float:right;
+  
+    
+}
+
+
+
+#sidebar h4{
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    /*background: url(../img/cara2.jpg) ;*/
+   
+   
+    
+    
+    
+}
+
+#sidebar p {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 300px; /*300 px de ancho*/
+    text-align: justify;/* justificado del texto*/
+
+}
+
+#formulario {
+        width: 100%;
+        box-shadow: 0px 0px 3px gray; 
+        text-align: center;
+        padding-bottom: 30px;
+
+
+}
+
+#formulario h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*#formulario input{
+
+    font-family: 'Times New Roman', Times, serif;
+   
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2px;
+}*/
+
+form input[type="text"],
+form input[type="password"]
+{
+
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 30%;
+        
+}
+
+#formulario button{
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/*------------------- footer----------------*/
+
+#footer{
+
+    width: 75%; /* tamaño de la pantalla*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px auto; /* centramos el contenedor*/
+    margin-top: 30px; /* le damos un margen top*/
+    padding: 20px; /*el margen al rededor*/
+    margin-bottom: 30px;
+    background: white; /* color de fondo */
+    box-shadow: 0px 0px 3px gray; /* para dar una sombra al contenedor */ 
+
+    
+    
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 200px !important;
+}
